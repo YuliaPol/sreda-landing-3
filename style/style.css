@@ -201,7 +201,7 @@ table {
   -webkit-background-size: contain;
           background-size: contain;
   position: absolute;
-  bottom: 50px;
+  top: 165px;
   left: -170px;
   z-index: 10;
 }
@@ -297,7 +297,8 @@ table {
   padding-bottom: 45px;
 }
 
-.promo .flex-row .form-wrapper .bonus-text {
+.promo .flex-row .form-wrapper .bonus-text,
+.promo .flex-row .form-wrapper .thank-you-hidden-text {
   max-width: 250px;
   font-family: "Montserrat";
   font-style: normal;
@@ -305,6 +306,10 @@ table {
   font-size: 16px;
   line-height: 16px;
   color: #000000;
+}
+
+.promo .flex-row .form-wrapper .thank-you-hidden-text {
+  display: none;
 }
 
 .promo .flex-row .form-wrapper .bonus-text-wrapper {
@@ -321,6 +326,33 @@ table {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-bottom: 160px;
+}
+
+.promo .flex-row .form-wrapper .thank-you-text {
+  display: none;
+  padding-bottom: 45px;
+}
+
+.promo .flex-row .form-wrapper .thank-you-text .thank-you-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 52px;
+  letter-spacing: 0.3px;
+  color: #000000;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.promo .flex-row .form-wrapper .thank-you-text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  padding-bottom: 3px;
 }
 
 .promo .flex-row .form-wrapper .book-marina {
@@ -357,6 +389,10 @@ table {
   position: absolute;
   right: 50px;
   bottom: 50px;
+}
+
+.promo .flex-row .form-wrapper .timer .item .value {
+  width: 50px;
 }
 
 .promo .flex-row .form-wrapper .timer .item .value,
@@ -584,6 +620,15 @@ table {
 }
 
 @media screen and (max-width: 500px) {
+  .promo .flex-row .form-col .mandala-form-1 {
+    display: none;
+  }
+  .promo .flex-row .form-wrapper .thank-you-text .thank-you-header {
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
   .promo .section-wrapper {
     padding-left: 15px;
     padding-right: 15px;
@@ -625,9 +670,15 @@ table {
   .promo .flex-row .form-wrapper .btn-submit {
     padding: 10px;
   }
+  .promo .flex-row .form-wrapper .thank-you-text {
+    padding-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 400px) {
+  .promo .flex-row .form-wrapper .thank-you-hidden-text {
+    max-width: 100%;
+  }
   .promo .flex-row .form-wrapper .timer {
     width: 210px;
     bottom: 35px;
@@ -654,5 +705,8 @@ table {
   .promo .flex-row .form-wrapper .timer .item .value,
   .promo .flex-row .form-wrapper .timer .item .dotted {
     font-size: 24px;
+  }
+  .promo .flex-row .form-wrapper .timer .item .value {
+    width: 40px;
   }
 }

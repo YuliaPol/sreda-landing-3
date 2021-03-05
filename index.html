@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <link rel="stylesheet" href="./style/style.css">
+
+    <script src="./js/jquery-3.4.0.min.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -60,17 +63,17 @@
                                 </span>
                             </p>
                         </div>
-                        <form action="#">
+                        <form action="#" class="form-valid">
                             <div class="form-group">
-                                <input class="input-text" type="text" name="name" placeholder="Ваше имя">
+                                <input class="input-text" type="text" name="name" placeholder="Ваше имя" data-reqired="reqired">
                                 <div class="error-text">Введите Ваше имя</div>
                             </div>
                             <div class="form-group">
-                                <input class="input-text"  type="email" name="email" placeholder="Ваш email">
+                                <input class="input-text"  type="email" name="email" placeholder="Ваш email" data-reqired="reqired">
                                 <div class="error-text">Введите Ваш email</div>
                             </div>
                             <div class="form-group">
-                                <input class="input-text"  type="tel" name="tel" placeholder="Телефон">
+                                <input class="input-text"  type="tel" name="tel" placeholder="Телефон" data-reqired="reqired">
                                 <div class="error-text">Введите Телефон</div>
                             </div>
                             <div class="btn-wrapper">
@@ -79,9 +82,17 @@
                                 </button>
                             </div>
                         </form>
+                        <div class="thank-you-text">
+                            <div class="thank-you-header">
+                                <span class="pink-text"><span class="bold">Спасибо</span>, ваша заявка принята!</span>
+                            </div>
+                        </div>
                         <div class="bonus-text-wrapper">
                             <div class="bonus-text">
                                 Специальный <span class="pink">БОНУС</span> для тех, кто действует быстро!
+                            </div>
+                            <div class="thank-you-hidden-text">
+                                Мы свяжемся с вами в ближайшее время
                             </div>
                         </div>
                         <div class="book-marina"></div>
@@ -93,14 +104,14 @@
                             <div class="item">
                                 <div class="dotted">:</div>
                             </div>
-                            <div class="hours item">
+                            <div class="minutes item">
                                 <div class="value">07</div>
                                 <div class="label">MIN</div>
                             </div>
                             <div class="item">
                                 <div class="dotted">:</div>
                             </div>
-                            <div class="hours item">
+                            <div class="seconds item">
                                 <div class="value">00</div>
                                 <div class="label">SEC</div>
                             </div>
