@@ -1,0 +1,658 @@
+@import url("./../font/Montserrat/stylesheet.css");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.promo {
+  background-image: url(./../img/block-1-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
+  padding-top: 25px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.promo .section-wrapper {
+  padding-top: 130px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 20;
+}
+
+.promo .section-wrapper .logo {
+  position: absolute;
+  right: 150px;
+  top: 20px;
+  width: 120px;
+}
+
+.promo .section-wrapper .logo img {
+  max-width: 100%;
+}
+
+.promo .flex-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.promo .flex-row .info-col {
+  width: 60%;
+}
+
+.promo .flex-row .info-col .event-info {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  padding-bottom: 40px;
+}
+
+.promo .flex-row .info-col .small-bold-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #000000;
+  max-width: 460px;
+  padding-bottom: 20px;
+}
+
+.promo .flex-row .info-col .promo-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: 0.2px;
+  color: #000000;
+  padding-bottom: 30px;
+}
+
+.promo .flex-row .info-col .small-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #000000;
+  padding-bottom: 30px;
+}
+
+.promo .flex-row .info-col .promo-btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C45ED3), to(#FBA2B8));
+  background: -webkit-linear-gradient(top, #C45ED3 0%, #FBA2B8 100%);
+  background: -o-linear-gradient(top, #C45ED3 0%, #FBA2B8 100%);
+  background: linear-gradient(180deg, #C45ED3 0%, #FBA2B8 100%);
+  border-radius: 10px;
+  padding: 15px 15px;
+  display: inline-block;
+}
+
+.promo .flex-row .info-col .promo-btn .btn-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.promo .flex-row .info-col .promo-btn .btn-row .icon-reward {
+  width: 55px;
+  height: 55px;
+  background: url(./../img/icon-reward.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.promo .flex-row .info-col .promo-btn .btn-row .btn-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+  padding-left: 3px;
+}
+
+.promo .flex-row .form-col {
+  width: 500px;
+  padding-left: 30px;
+  min-width: 500px;
+  max-width: 100%;
+  position: relative;
+}
+
+.promo .flex-row .form-col .mandala-form-1 {
+  width: 405px;
+  height: 385px;
+  background: url(./../img/block-1-mandala-2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  position: absolute;
+  bottom: 50px;
+  left: -170px;
+  z-index: 10;
+}
+
+.promo .flex-row .form-col .mandala-form-2 {
+  width: 405px;
+  height: 425px;
+  background: url(./../img/block-1-mandala-3.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  position: absolute;
+  top: -100px;
+  right: -195px;
+  z-index: 10;
+}
+
+.promo .flex-row .form-wrapper {
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 55px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 15px 20px 5px rgba(41, 41, 42, 0.25);
+          box-shadow: 0px 15px 20px 5px rgba(41, 41, 42, 0.25);
+  border-radius: 10px;
+  position: relative;
+  z-index: 50;
+}
+
+.promo .flex-row .form-wrapper .form-text {
+  padding-bottom: 20px;
+}
+
+.promo .flex-row .form-wrapper .form-text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  padding-bottom: 3px;
+}
+
+.promo .flex-row .form-wrapper .form-group.has-error .input-text {
+  -webkit-box-shadow: 0px 3px 6px 4px #c224248a;
+          box-shadow: 0px 3px 6px 4px #c224248a;
+}
+
+.promo .flex-row .form-wrapper .form-group.has-error .error-text {
+  opacity: 1;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.promo .flex-row .form-wrapper .form-group .input-text {
+  width: 395px;
+  max-width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #CED4DA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  padding: 15px 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #495057;
+}
+
+.promo .flex-row .form-wrapper .form-group .error-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 14px;
+  color: #fa6161;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.promo .flex-row .form-wrapper .btn-submit {
+  width: 395px;
+  max-width: 100%;
+}
+
+.promo .flex-row .form-wrapper .btn-wrapper {
+  padding-bottom: 45px;
+}
+
+.promo .flex-row .form-wrapper .bonus-text {
+  max-width: 250px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.promo .flex-row .form-wrapper .bonus-text-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 160px;
+}
+
+.promo .flex-row .form-wrapper .book-marina {
+  position: absolute;
+  bottom: 10px;
+  left: -32px;
+  height: 210px;
+  width: 200px;
+  background: url(./../img/book-marina.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.promo .flex-row .form-wrapper .timer {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 15px 20px 5px rgba(41, 41, 42, 0.3);
+          box-shadow: 0px 15px 20px 5px rgba(41, 41, 42, 0.3);
+  border-radius: 10px;
+  padding: 20px 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 278px;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+.promo .flex-row .form-wrapper .timer .item .value,
+.promo .flex-row .form-wrapper .timer .item .dotted {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fba2b8), to(#c45ed3));
+  background: -webkit-linear-gradient(#fba2b8, #c45ed3);
+  background: -o-linear-gradient(#fba2b8, #c45ed3);
+  background: linear-gradient(#fba2b8, #c45ed3);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.promo .flex-row .form-wrapper .timer .item .label {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  padding-top: 10px;
+  color: #000000;
+}
+
+.promo .mandala {
+  width: 220px;
+  height: 390px;
+  background: url(./../img/block-1-mandala-1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  position: absolute;
+  left: -10px;
+  top: calc(50% - 190px);
+  z-index: 10;
+}
+
+.promo .flower {
+  width: 163px;
+  height: 277px;
+  background: url(./../img/block-1-flower.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  position: absolute;
+  bottom: -100px;
+  left: 30%;
+}
+
+.btn-default {
+  outline: none;
+  text-decoration: none;
+  background: -webkit-linear-gradient(0.22deg, #C45ED3 0.18%, #FBA2B8 99.86%);
+  background: -o-linear-gradient(0.22deg, #C45ED3 0.18%, #FBA2B8 99.86%);
+  background: linear-gradient(89.78deg, #C45ED3 0.18%, #FBA2B8 99.86%);
+  border-radius: 4px;
+  padding: 20px 25px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.vilote-text {
+  color: #c45ed3;
+}
+
+.pink-text {
+  color: #fba2b8;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.section-wrapper {
+  padding-left: 135px;
+  padding-right: 150px;
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (min-width: 1500px) {
+  .promo .mandala {
+    width: 280px;
+    height: 490px;
+  }
+  .promo .flower {
+    bottom: -130px;
+    left: 33%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .promo .section-wrapper .logo {
+    right: 60px;
+  }
+  .promo .flex-row .info-col .promo-header {
+    font-size: 32px;
+    line-height: 36px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .promo .section-wrapper .logo {
+    right: 40px;
+  }
+  .promo .flex-row .info-col .event-info {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 40px;
+  }
+  .promo .flex-row .info-col .small-bold-text {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 15px;
+  }
+  .promo .flex-row .info-col .small-text {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 15px;
+  }
+  .promo .flex-row .form-wrapper {
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .promo .flex-row .form-wrapper .form-text {
+    padding-bottom: 15px;
+  }
+  .promo .flex-row .form-wrapper .form-text p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .promo .flex-row .form-col {
+    width: 450px;
+    min-width: 450px;
+  }
+  .promo .flex-row .form-wrapper .book-marina {
+    left: -32px;
+    height: 190px;
+    width: 170px;
+  }
+  .promo .flex-row .form-wrapper .timer {
+    right: 20px;
+    bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .promo .flex-row .form-col {
+    width: 400px;
+    min-width: 400px;
+  }
+  .promo .flex-row .form-wrapper .book-marina {
+    left: -35px;
+    height: 140px;
+    width: 150px;
+  }
+  .promo .flex-row .form-wrapper .timer {
+    right: 20px;
+    bottom: 40px;
+    width: 255px;
+    padding: 15px 20px;
+  }
+  .promo .flex-row .form-wrapper .btn-wrapper {
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo .flex-row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .promo .flex-row .info-col {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .promo .flex-row .form-col {
+    width: auto;
+    padding-left: 0px;
+  }
+  .promo .flex-row .form-wrapper .book-marina {
+    left: -32px;
+    height: 210px;
+    width: 180px;
+  }
+  .promo .flex-row .form-wrapper .btn-wrapper {
+    padding-bottom: 45px;
+  }
+  .promo .flex-row .form-wrapper .timer {
+    right: 50px;
+    bottom: 50px;
+    width: 278px;
+  }
+  .promo .section-wrapper {
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .promo .section-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .promo .flex-row .form-col {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .promo .flex-row .form-wrapper .form-group .input-text,
+  .promo .flex-row .form-wrapper .btn-submit {
+    width: 100%;
+  }
+  .promo .flex-row .form-wrapper .book-marina {
+    left: -32px;
+    height: 150px;
+    width: 161px;
+  }
+  .promo .flex-row .form-wrapper .timer {
+    right: 20px;
+    bottom: 40px;
+    width: 255px;
+    padding: 15px 20px;
+  }
+  .promo .flex-row .form-wrapper .btn-wrapper {
+    padding-bottom: 25px;
+  }
+  .promo .flex-row .info-col .promo-header {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .promo .flex-row .info-col .promo-btn .btn-row .btn-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .promo .flex-row .info-col .promo-btn {
+    padding: 10px 15px;
+  }
+  .promo .flex-row .form-wrapper .btn-submit {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .promo .flex-row .form-wrapper .timer {
+    width: 210px;
+    bottom: 35px;
+    right: 30px;
+    padding: 10px 15px;
+  }
+  .promo .flex-row .form-wrapper .timer .item .value,
+  .promo .flex-row .form-wrapper .timer .item .dotted {
+    font-size: 32px;
+  }
+  .promo .flex-row .form-wrapper .timer .item .label {
+    font-size: 10px;
+    padding-top: 5px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .promo .flex-row .form-wrapper .timer {
+    width: 180px;
+    bottom: 35px;
+    right: 8px;
+    padding: 5px 15px;
+  }
+  .promo .flex-row .form-wrapper .timer .item .value,
+  .promo .flex-row .form-wrapper .timer .item .dotted {
+    font-size: 24px;
+  }
+}
