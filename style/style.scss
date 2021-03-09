@@ -77,6 +77,7 @@ table {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        min-height: 670px;
         .info-col {
             width: 60%;
             .event-info {
@@ -365,6 +366,111 @@ table {
         left: 30%;
     }
 }
+.life {
+    position: relative;
+    .section-wrapper {
+        padding-top: 90px;
+        padding-bottom: 100px;
+        z-index: 20;
+    }
+    .life-header {
+        font-family: $fontpage;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 43px;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 70px;
+    }
+    .info-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .info-col {
+            width: 60%;
+            padding-right: 25px;
+            font-family: $fontpage;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.3px;
+            color: #000000;
+            p {
+                padding-bottom: 30px;
+            }
+            .checked-list {
+                color: #5C5C5C;
+            }
+        }
+        .picture-col {
+            width: 40%;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    .life-bg-1 {
+        position: absolute;
+        width: 185px;
+        height: 375px;
+        left: 0px;
+        bottom: 10px;
+        background: url(./../img/life-bg-1.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 10;
+    }
+    .life-flower-1 {
+        position: absolute;
+        width: 91px;
+        height: 138px;
+        right: 0px;
+        bottom: 57px;
+        background: url(./../img/life-flower-1.svg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 40;
+    }
+    .life-flower-2 {
+        position: absolute;
+        width: 226px;
+        height: 268px;
+        right: 0px;
+        bottom: 140px;
+        background: url(./../img/life-flower-2.svg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 40;
+    }
+}
+.checked-list {
+    padding-left: 40px;
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-bottom: 12px;
+        &::before {
+            content: " ";
+            width: 32px;
+            min-width: 32px;
+            height: 32px;
+            background: url(./../img/checked-list.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            margin-right: 16px;
+        }
+        span {
+            display: contents;
+        }
+    }
+}
 .btn-default {
     outline: none;
     text-decoration: none;
@@ -381,7 +487,7 @@ table {
     border: none;
     cursor: pointer;
 }
-.vilote-text {
+.violet-text {
     color: $violet;
 }
 .pink-text {
@@ -422,6 +528,33 @@ table {
     }
 }
 @media screen and (max-width: 992px) {
+    .life .life-header {
+        font-size: 32px;
+        line-height: 38px;
+        padding-bottom: 40px;
+    }
+    .life .section-wrapper {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .life .info-row .info-col,
+    .life .info-row .picture-col {
+        width: 50%;
+    }
+    .checked-list {
+        padding-left: 15px;
+    }
+    .life .info-row .info-col p {
+        padding-bottom: 20px;
+    }
+    .life .info-row .info-col {
+        font-size: 16px;
+        line-height: 18px;
+        padding-right: 15px;
+    }
+    .checked-list li::before {
+        margin-right: 10px;
+    }
     .section-wrapper {
         padding-left: 40px;
         padding-right: 40px;
@@ -493,6 +626,33 @@ table {
     }
 }
 @media screen and (max-width: 768px) {
+    .life .info-row {
+        flex-wrap: wrap;
+        .info-col {
+            width: 100%;
+        }
+        .picture-col {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .life .life-bg-1 {
+        top: 80px;
+        bottom: auto;
+    }
+    .life .life-header {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .life .info-row .info-col {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .promo {
+        padding-top: 0px;
+    }
     .promo .flex-row {
         flex-wrap: wrap;
         .info-col {
@@ -519,11 +679,36 @@ table {
     }
     .promo .section-wrapper {
         padding-top: 60px;
+    }
+    .section-wrapper {
         padding-left: 30px;
         padding-right: 30px;
     }
+    .life .life-flower-2 {
+        bottom: 70px;
+    }
+    .life .life-flower-1 {
+        bottom: 0px;
+    }
 }
 @media screen and (max-width: 500px) {
+    .checked-list {
+        padding-left: 0px;
+    }
+    .checked-list li::before {
+        width: 25px;
+        height: 25px;
+    }
+    .life .life-flower-2 {
+        bottom: 100px;
+        width: 126px;
+        height: 168px;
+    }
+    .life .life-flower-1 {
+        bottom: 40px;
+        width: 51px;
+        height: 108px;
+    }
     .promo .flex-row .form-col .mandala-form-1 {
         display: none;
     }
@@ -533,7 +718,7 @@ table {
         padding-top: 15px;
         padding-bottom: 20px;
     }
-    .promo .section-wrapper {
+    .section-wrapper {
         padding-left: 15px;
         padding-right: 15px;
     }
