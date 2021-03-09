@@ -732,6 +732,10 @@ table {
     }
 }
 @media screen and (max-width: 768px) {
+    .what-separated .mandala-1,
+    .what-separated .mandala-2 {
+        display: none;
+    }
     .what-separated .what-separated-list .item {
         width: 50%;
         min-width: 50%;
