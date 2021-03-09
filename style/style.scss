@@ -448,6 +448,107 @@ table {
         z-index: 40;
     }
 }
+.what-separated {
+    padding-top: 130px;
+    padding-bottom: 70px;
+    background: url(./../img/what-separated-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .what-separated-header {
+        font-family: $fontpage;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        color: #18191F;
+        padding-bottom: 50px;
+    }
+    .what-separated-list {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex-wrap: wrap;
+        .item {
+            width: 25%;
+            min-width: 25%;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 35px;
+            .icon {
+                text-align: center;
+                padding-bottom: 20px;
+                img {
+                    width: 48px;
+                    height: 48px;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+            .detail {
+                font-family: $fontpage;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: center;
+                color: #18191F;
+                max-width: 265px;
+                margin: auto;
+            }
+        }
+    }
+    .mandala-1 {
+        position: absolute;
+        background: url(./../img/what-s-mandala-1.svg);
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 205px;
+        height: 384px;
+        bottom: 35px;
+        left: 0px;
+        z-index: 10;
+    }
+    .flower-1 {
+        position: absolute;
+        background: url(./../img/what-s-flower-1.svg);
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 207px;
+        height: 228px;
+        top: -85px;
+        left: calc(50% - 100px);
+        z-index: 10;
+    }
+    .flower-2 {
+        position: absolute;
+        background: url(./../img/what-s-flower-2.svg);
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 126px;
+        height: 114px;
+        top: -20px;
+        left: 50%;
+        z-index: 10;
+    }
+    .mandala-2 {
+        position: absolute;
+        background: url(./../img/what-s-mandala-2.svg);
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 205px;
+        height: 384px;
+        right: 0px;
+        z-index: 10;
+        top: 78px;
+    }
+}
 .checked-list {
     padding-left: 40px;
     li {
@@ -502,6 +603,7 @@ table {
     max-width: 1440px;
     margin: auto;
     position: relative;
+    z-index: 20;
 }
 @media screen and (min-width: 1500px) {
     .promo .mandala {
@@ -528,6 +630,10 @@ table {
     }
 }
 @media screen and (max-width: 992px) {
+    .what-separated .what-separated-list .item {
+        width: 33.3%;
+        min-width: 33.3%;
+    }
     .life .life-header {
         font-size: 32px;
         line-height: 38px;
@@ -626,6 +732,15 @@ table {
     }
 }
 @media screen and (max-width: 768px) {
+    .what-separated .what-separated-list .item {
+        width: 50%;
+        min-width: 50%;
+    }
+    .what-separated .what-separated-header {
+        font-size: 32px;
+        line-height: 36px;
+        padding-bottom: 35px;
+    }
     .life .info-row {
         flex-wrap: wrap;
         .info-col {
@@ -692,6 +807,16 @@ table {
     }
 }
 @media screen and (max-width: 500px) {
+    .what-separated .what-separated-list .item {
+        padding-left: 0px;
+        padding-right: 0px;
+        &:nth-child(2n + 1) {
+            padding-right: 5px;
+        }
+        &:nth-child(2n) {
+            padding-left: 5px;
+        }
+    }
     .checked-list {
         padding-left: 0px;
     }
@@ -764,6 +889,10 @@ table {
     }
 }
 @media screen and (max-width: 400px) {
+    .what-separated .what-separated-list .item .detail {
+        font-size: 12px;
+        line-height: 18px;
+    }
     .promo .flex-row .form-wrapper .thank-you-hidden-text {
         max-width: 100%;
     }
