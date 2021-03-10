@@ -634,6 +634,83 @@ table {
         z-index: 10; 
     }
 }
+.author {
+    padding-top: 110px;
+    padding-bottom: 60px;
+    .author-header {
+        font-family: $fontpage;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        color: #18191F;
+        padding-bottom: 28px;
+    }
+    .author-text {
+        font-family: $fontpage;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        text-align: center;
+    }
+    .author-row {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .author-col {
+            max-width: 45%;
+            width: 400px;
+            .picture-wrapper {
+                width: 97px;
+                height: 97px;
+                background: url(./../img/icon-bg.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                .icon {
+                    width: 54px;
+                    height: 54px;
+                    &.icon-lotus {
+                        background: url(./../img/icon-lotus.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    &.icon-meditation {
+                        background: url(./../img/icon-meditation.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+            }
+            .description {
+                padding-top: 5px;
+                font-family: $fontpage;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+                color: #000000;
+            }
+        }
+    }
+    .btn-wrapper {
+        padding-top: 30px;            
+        max-width: 395px;
+        margin: auto;
+    }
+}
 .checked-list {
     padding-left: 40px;
     li {
@@ -741,6 +818,10 @@ table {
     }
 }
 @media screen and (max-width: 992px) {
+    .author .author-header {
+        font-size: 38px;
+        line-height: 42px;
+    }
     .marina-w-laptop .section-wrapper {
         padding-left: 0px;
         padding-right: 0px;
@@ -866,6 +947,21 @@ table {
     }
 }
 @media screen and (max-width: 768px) {
+    .author {
+        padding-top: 60px;
+        .author-header {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .author-text {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .author .author-row .author-col .description {
+        font-size: 14px;
+        line-height: 16px;
+    }
     .marina-w-laptop .pink-bg {
         padding-right: 60px;
         padding-left: 250px;
@@ -1059,6 +1155,14 @@ table {
     }
 }
 @media screen and (max-width: 400px) {
+    .author .author-row {
+        flex-direction: column;
+        .author-col {
+            width: 100%;
+            max-width: 100%;
+            padding-bottom: 15px;
+        }
+    }
     .what-separated .what-separated-list .item .detail {
         font-size: 12px;
         line-height: 18px;
