@@ -686,6 +686,91 @@ table {
   top: 78px;
 }
 
+.marina-w-laptop {
+  padding-top: 110px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.marina-w-laptop .section-wrapper {
+  padding-left: 280px;
+  padding-right: 135px;
+  max-width: none;
+}
+
+.marina-w-laptop .pink-bg {
+  padding-top: 66px;
+  padding-bottom: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#D294E1), to(#FBA2B8));
+  background: -webkit-linear-gradient(top, #D294E1 0%, #FBA2B8 100%);
+  background: -o-linear-gradient(top, #D294E1 0%, #FBA2B8 100%);
+  background: linear-gradient(180deg, #D294E1 0%, #FBA2B8 100%);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+  padding-left: 220px;
+  padding-right: 200px;
+}
+
+.marina-w-laptop .pink-bg .pink-bg-content {
+  max-width: 655px;
+  margin: auto;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+}
+
+.marina-w-laptop .pink-bg .mandala {
+  position: absolute;
+  top: calc(50% - 150px);
+  right: -10px;
+  width: 160px;
+  height: 300px;
+  background: url(./../img/block-1-mandala-1.svg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-position: right;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.marina-w-laptop .img-marina {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 490px;
+  height: 400px;
+  background: url(./../img/marina-with-laptop.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: bottom left;
+  z-index: 20;
+}
+
+.marina-w-laptop .purple-oval {
+  position: absolute;
+  bottom: 55px;
+  left: 0px;
+  width: 206px;
+  height: 230px;
+  background: url(./../img/purple-oval.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center;
+  z-index: 10;
+}
+
 .checked-list {
   padding-left: 40px;
 }
@@ -774,10 +859,37 @@ table {
   }
 }
 
+@media screen and (max-width: 1350px) {
+  .marina-w-laptop .section-wrapper {
+    padding-left: 250px;
+    padding-right: 135px;
+  }
+  .marina-w-laptop .pink-bg {
+    padding-right: 150px;
+    padding-left: 200px;
+  }
+  .marina-w-laptop .img-marina {
+    width: 440px;
+    height: 380px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .section-wrapper {
     padding-left: 60px;
     padding-right: 60px;
+  }
+  .marina-w-laptop .section-wrapper {
+    padding-left: 170px;
+    padding-right: 60px;
+  }
+  .marina-w-laptop .pink-bg {
+    padding-right: 130px;
+    padding-left: 230px;
+  }
+  .marina-w-laptop .img-marina {
+    width: 400px;
+    height: 350px;
   }
   .promo .section-wrapper .logo {
     right: 60px;
@@ -790,6 +902,29 @@ table {
 }
 
 @media screen and (max-width: 992px) {
+  .marina-w-laptop .section-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .marina-w-laptop .pink-bg {
+    padding-right: 80px;
+    padding-left: 340px;
+    border-radius: 0px;
+  }
+  .marina-w-laptop .pink-bg .pink-bg-content {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .marina-w-laptop .img-marina {
+    width: 340px;
+    height: 300px;
+  }
+  .marina-w-laptop .pink-bg .mandala {
+    right: -80px;
+  }
+  .marina-w-laptop .purple-oval {
+    display: none;
+  }
   .what-separated .what-separated-list .item {
     width: 33.3%;
     min-width: 33.3%;
@@ -892,6 +1027,22 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .marina-w-laptop .pink-bg {
+    padding-right: 60px;
+    padding-left: 250px;
+    border-radius: 0px;
+  }
+  .marina-w-laptop .pink-bg .pink-bg-content {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .marina-w-laptop .img-marina {
+    width: 250px;
+    height: 280px;
+  }
+  .marina-w-laptop .pink-bg .mandala {
+    right: -100px;
+  }
   .what-separated .mandala-1,
   .what-separated .mandala-2 {
     display: none;
@@ -976,6 +1127,22 @@ table {
 }
 
 @media screen and (max-width: 500px) {
+  .marina-w-laptop .pink-bg {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 350px;
+  }
+  .marina-w-laptop .pink-bg .pink-bg-content {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .marina-w-laptop .img-marina {
+    width: 100%;
+    height: 350px;
+  }
+  .marina-w-laptop .pink-bg .mandala {
+    display: none;
+  }
   .what-separated .what-separated-list .item {
     padding-left: 0px;
     padding-right: 0px;
@@ -1083,6 +1250,9 @@ table {
 }
 
 @media screen and (max-width: 350px) {
+  .marina-w-laptop .pink-bg {
+    padding-bottom: 300px;
+  }
   .promo .flex-row .form-wrapper .timer {
     width: 180px;
     bottom: 35px;
