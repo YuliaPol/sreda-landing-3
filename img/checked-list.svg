@@ -1,18 +1,1 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_b)">
-<rect width="32" height="32" rx="16" fill="url(#paint0_linear)"/>
-</g>
-<defs>
-<filter id="filter0_b" x="-48" y="-48" width="128" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feGaussianBlur in="BackgroundImage" stdDeviation="24"/>
-<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
-</filter>
-<linearGradient id="paint0_linear" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
-<stop stop-color="#CB72D9"/>
-<stop offset="1" stop-color="#FBA2B8"/>
-</linearGradient>
-</defs>
-<path style="transform: translate(2px, 5px);" d="M16.48 8.64008L10.32 14.8001L7.52002 12.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"  ><g filter="url(#A)"><rect width="32" height="32" rx="16" fill="url(#B)"/></g><defs><filter id="A" x="-48" y="-48" width="128" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0"/><feGaussianBlur in="BackgroundImage" stdDeviation="24"/><feComposite in2="SourceAlpha" operator="in"/><feBlend in="SourceGraphic"/></filter><linearGradient id="B" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse"><stop stop-color="#cb72d9"/><stop offset="1" stop-color="#fba2b8"/></linearGradient></defs><path d="M18.48 13.64l-6.16 6.16-2.8-2.8" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>

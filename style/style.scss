@@ -48,6 +48,22 @@ table {
 * {
     box-sizing: border-box;
 }
+// scroll
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    // background: #888;
+    background: linear-gradient($violet 0.18%, $pink 99.86%);
+    border-radius: 4px;
+}
 .promo {
     background-image: url(./../img/block-1-bg.jpg);
     // background: #000;
@@ -554,6 +570,7 @@ table {
     position: relative;
     max-width: 100%;
     overflow: hidden;
+    padding-bottom: 5px;
     .section-wrapper {
         padding-left: 280px;
         padding-right: 135px;

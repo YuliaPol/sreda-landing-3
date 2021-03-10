@@ -45,6 +45,26 @@ table {
           box-sizing: border-box;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+  -webkit-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.18%, #c45ed3), color-stop(99.86%, #fba2b8));
+  background: -webkit-linear-gradient(#c45ed3 0.18%, #fba2b8 99.86%);
+  background: linear-gradient(#c45ed3 0.18%, #fba2b8 99.86%);
+  border-radius: 4px;
+}
+
 .promo {
   background-image: url(./../img/block-1-bg.jpg);
   background-position: center;
@@ -691,6 +711,7 @@ table {
   position: relative;
   max-width: 100%;
   overflow: hidden;
+  padding-bottom: 5px;
 }
 
 .marina-w-laptop .section-wrapper {
