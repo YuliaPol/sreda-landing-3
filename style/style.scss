@@ -108,7 +108,7 @@ table {
             .small-bold-text {
                 font-family: $fontpage;
                 font-style: normal;
-                font-weight: 600;
+                font-weight: normal;
                 font-size: 18px;
                 line-height: 22px;
                 letter-spacing: 0.3px;
@@ -212,10 +212,15 @@ table {
                     font-family: $fontpage;
                     font-style: normal;
                     font-weight: 500;
-                    font-size: 18px;
-                    line-height: 24px;
+                    font-size: 24px;
+                    line-height: 29px;
                     color: #000000;
                     padding-bottom: 3px;
+                    .pink-gradient {
+                        background: linear-gradient(#C45ED3, #FBA2B8);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
                 }
             }
             .form-group {
@@ -268,8 +273,8 @@ table {
                 max-width: 250px;
                 font-family: $fontpage;
                 font-style: normal;
-                font-weight: bold;
-                font-size: 16px;
+                font-weight: normal;
+                font-size: 14px;
                 line-height: 16px;
                 color: #000000;
             }
@@ -507,7 +512,7 @@ table {
                 font-family: $fontpage;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 21px;
                 text-align: center;
                 color: #18191F;
@@ -595,6 +600,44 @@ table {
             line-height: 29px;
             letter-spacing: 0.3px;
             color: #FFFFFF;
+            .quote-content {
+                position: relative;
+                &::before {
+                    content: " ";
+                    position: absolute;
+                    width: 53px;
+                    height: 45px;
+                    top: -10px;
+                    left: -65px;
+                    background: url(./../img/quote-mark.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                &::after {
+                    content: " ";
+                    position: absolute;
+                    width: 53px;
+                    height: 45px;
+                    bottom: -10px;
+                    right: -53px;
+                    background: url(./../img/quote-mark.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    transform: rotate(180deg);
+                }
+            }
+            .marina-author {
+                font-family: $fontpage;
+                font-style: italic;
+                font-weight: 600;
+                font-size: 21px;
+                line-height: 26px;
+                text-align: right;
+                color: #FFFFFF;
+                padding-top: 25px;
+            }
         }
         .mandala {
             position: absolute;
@@ -778,6 +821,16 @@ table {
     }
 }
 @media screen and (max-width: 1350px) {
+    .marina-w-laptop .pink-bg .mandala {
+        width: 120px;
+    }
+    .marina-w-laptop .pink-bg .pink-bg-content .quote-content {
+        padding-bottom: 20px;
+    }
+    .marina-w-laptop .pink-bg .pink-bg-content .quote-content::after {
+        right: -40px;
+        bottom: -20px;
+    }
     .marina-w-laptop .section-wrapper {
         padding-left: 250px;
         padding-right: 135px;
@@ -818,6 +871,18 @@ table {
     }
 }
 @media screen and (max-width: 992px) {
+    .marina-w-laptop .pink-bg .pink-bg-content .quote-content::after {
+        width: 25px;
+        height: 25px;
+        right: -25px;
+        bottom: -20px;
+    }
+    .marina-w-laptop .pink-bg .pink-bg-content .quote-content::before {
+        width: 25px;
+        height: 25px;
+        left: -35px;
+        top: -20px;
+    }
     .author .author-header {
         font-size: 38px;
         line-height: 42px;
@@ -841,6 +906,7 @@ table {
     }
     .marina-w-laptop .pink-bg .mandala {
         right: -80px;
+        width: 140px;
     }
     .marina-w-laptop .purple-oval {
         display: none;
@@ -947,6 +1013,10 @@ table {
     }
 }
 @media screen and (max-width: 768px) {
+    .marina-w-laptop .pink-bg .pink-bg-content .marina-author {
+        font-size: 14px;
+        line-height: 16px;
+    }
     .author {
         padding-top: 60px;
         .author-header {
@@ -1057,6 +1127,25 @@ table {
     }
 }
 @media screen and (max-width: 500px) {
+    .marina-w-laptop .pink-bg .pink-bg-content .quote-content {
+        padding-left: 15px;
+        padding-right: 15px;
+        &::before {
+            width: 20px;
+            height: 20px;
+            top: -10px;
+            left: -10px;
+        }
+        &::after {
+            width: 20px;
+            height: 20px;
+            bottom: -10px;
+            right: -5px;
+        }
+    }
+    .what-separated .what-separated-list .item .detail {
+        font-size: 14px;
+    }
     .marina-w-laptop .pink-bg {
         padding-right: 15px;
         padding-left: 15px;
