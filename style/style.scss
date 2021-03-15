@@ -754,6 +754,118 @@ table {
         margin: auto;
     }
 }
+.about-marina {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background: url(./../img/about-marina-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    .about-header {
+        font-family: $fontpage;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        color: #18191F;
+        padding-bottom: 25px;
+        .pink-gradient {
+            background: linear-gradient(#C45ED3, #FBA2B8);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .under-header {
+        font-family: $fontpage;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 45px;
+    }
+    .about-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .picture-col {
+            width: 40%;
+            .picture-wrapper {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            .companies-wrapper {
+                padding-top: 55px;
+                .companies-header {
+                    font-family: $fontpage;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 140%;
+                    letter-spacing: -0.03em;
+                    color: #000000;
+                    padding-bottom: 25px;
+                }
+                .companies-list {
+                    .row-33 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-bottom: 20px;
+                        .company-item {
+                            width: calc(33% - 36px);
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .row-25 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-bottom: 20px;
+                        .company-item {
+                            width: calc(33% - 40.5px);
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .text-col {
+            width: 60%;
+            padding-left: 25px;
+            font-family: $fontpage;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 23px;
+            color: #000000;
+            p {
+                padding-bottom: 15px;
+            }
+        }
+    }
+    .about-purple-oval {
+        position: absolute;
+        background: url(./../img/about-marina-bg-pink.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 355px;
+        height: 520px;
+        left: 0px;
+        top: 305px;
+    }
+}
 .checked-list {
     padding-left: 40px;
     li {
@@ -776,6 +888,32 @@ table {
             display: contents;
         }
     }
+}
+.flowers-list {
+    padding-bottom: 25px;
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+        &::before {
+            content: " ";
+            width: 18px;
+            min-width: 18px;
+            height: 16px;
+            background: url(./../img/flower-list-icon.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            margin-right: 7px;
+        }
+        span {
+            display: contents;
+        }
+    }
+}
+.italic-text {
+    font-style: italic;
 }
 .btn-default {
     outline: none;
@@ -845,6 +983,13 @@ table {
     }
 }
 @media screen and (max-width: 1200px) {
+    .flowers-list {
+        padding-bottom: 15px;
+    }
+    .about-marina .about-row .text-col {
+        font-size: 16px;
+        line-height: 20px;
+    }
     .section-wrapper {
         padding-left: 60px;
         padding-right: 60px;
@@ -871,6 +1016,26 @@ table {
     }
 }
 @media screen and (max-width: 992px) {
+    .about-marina .about-header {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .about-marina .under-header {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 35px;
+    }
+    .about-marina .about-row .text-col {
+        padding-left: 15px;
+        font-size: 14px;
+        line-height: 18px;
+        p {
+            padding-bottom: 10px;
+        }
+    }
+    .flowers-list {
+        padding-bottom: 10px;
+    }
     .marina-w-laptop .pink-bg .pink-bg-content .quote-content::after {
         width: 25px;
         height: 25px;
@@ -1013,6 +1178,27 @@ table {
     }
 }
 @media screen and (max-width: 768px) {
+    .about-marina {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .about-marina .about-row {
+        flex-direction: column-reverse;
+        .text-col {
+            width: 100%;
+            padding-left: 0px;
+        }
+        .picture-col {
+            width: 100%;
+            padding-top: 25px;
+            max-width: 400px;
+            margin: auto;
+        }
+    }
+    .about-marina .about-purple-oval {
+        top: auto;
+        bottom: 300px;
+    }
     .marina-w-laptop .pink-bg .pink-bg-content .marina-author {
         font-size: 14px;
         line-height: 16px;
@@ -1127,6 +1313,16 @@ table {
     }
 }
 @media screen and (max-width: 500px) {
+    .about-marina .about-header {
+        font-size: 28px;
+        line-height: 32px;
+        padding-bottom: 15px;
+    }
+    .about-marina .under-header {
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 25px;
+    }
     .marina-w-laptop .pink-bg .pink-bg-content .quote-content {
         padding-left: 15px;
         padding-right: 15px;

@@ -958,6 +958,168 @@ table {
   margin: auto;
 }
 
+.about-marina {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  background: url(./../img/about-marina-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.about-marina .about-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #18191F;
+  padding-bottom: 25px;
+}
+
+.about-marina .about-header .pink-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C45ED3), to(#FBA2B8));
+  background: -webkit-linear-gradient(#C45ED3, #FBA2B8);
+  background: -o-linear-gradient(#C45ED3, #FBA2B8);
+  background: linear-gradient(#C45ED3, #FBA2B8);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-marina .under-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 45px;
+}
+
+.about-marina .about-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-marina .about-row .picture-col {
+  width: 40%;
+}
+
+.about-marina .about-row .picture-col .picture-wrapper {
+  width: 100%;
+}
+
+.about-marina .about-row .picture-col .picture-wrapper img {
+  width: 100%;
+}
+
+.about-marina .about-row .picture-col .companies-wrapper {
+  padding-top: 55px;
+}
+
+.about-marina .about-row .picture-col .companies-wrapper .companies-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  padding-bottom: 25px;
+}
+
+.about-marina .about-row .picture-col .companies-wrapper .companies-list .row-33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.about-marina .about-row .picture-col .companies-wrapper .companies-list .row-33 .company-item {
+  width: calc(33% - 36px);
+}
+
+.about-marina .about-row .picture-col .companies-wrapper .companies-list .row-33 .company-item img {
+  width: 100%;
+}
+
+.about-marina .about-row .picture-col .companies-wrapper .companies-list .row-25 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.about-marina .about-row .picture-col .companies-wrapper .companies-list .row-25 .company-item {
+  width: calc(33% - 40.5px);
+}
+
+.about-marina .about-row .picture-col .companies-wrapper .companies-list .row-25 .company-item img {
+  max-width: 100%;
+}
+
+.about-marina .about-row .text-col {
+  width: 60%;
+  padding-left: 25px;
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.about-marina .about-row .text-col p {
+  padding-bottom: 15px;
+}
+
+.about-marina .about-purple-oval {
+  position: absolute;
+  background: url(./../img/about-marina-bg-pink.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  width: 355px;
+  height: 520px;
+  left: 0px;
+  top: 305px;
+}
+
 .checked-list {
   padding-left: 40px;
 }
@@ -993,6 +1155,47 @@ table {
 
 .checked-list li span {
   display: contents;
+}
+
+.flowers-list {
+  padding-bottom: 25px;
+}
+
+.flowers-list li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 10px;
+}
+
+.flowers-list li::before {
+  content: " ";
+  width: 18px;
+  min-width: 18px;
+  height: 16px;
+  background: url(./../img/flower-list-icon.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center;
+  margin-right: 7px;
+}
+
+.flowers-list li span {
+  display: contents;
+}
+
+.italic-text {
+  font-style: italic;
 }
 
 .btn-default {
@@ -1072,6 +1275,13 @@ table {
 }
 
 @media screen and (max-width: 1200px) {
+  .flowers-list {
+    padding-bottom: 15px;
+  }
+  .about-marina .about-row .text-col {
+    font-size: 16px;
+    line-height: 20px;
+  }
   .section-wrapper {
     padding-left: 60px;
     padding-right: 60px;
@@ -1099,6 +1309,26 @@ table {
 }
 
 @media screen and (max-width: 992px) {
+  .about-marina .about-header {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .about-marina .under-header {
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 35px;
+  }
+  .about-marina .about-row .text-col {
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .about-marina .about-row .text-col p {
+    padding-bottom: 10px;
+  }
+  .flowers-list {
+    padding-bottom: 10px;
+  }
   .marina-w-laptop .pink-bg .pink-bg-content .quote-content::after {
     width: 25px;
     height: 25px;
@@ -1241,6 +1471,31 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .about-marina {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .about-marina .about-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-marina .about-row .text-col {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .about-marina .about-row .picture-col {
+    width: 100%;
+    padding-top: 25px;
+    max-width: 400px;
+    margin: auto;
+  }
+  .about-marina .about-purple-oval {
+    top: auto;
+    bottom: 300px;
+  }
   .marina-w-laptop .pink-bg .pink-bg-content .marina-author {
     font-size: 14px;
     line-height: 16px;
@@ -1360,6 +1615,16 @@ table {
 }
 
 @media screen and (max-width: 500px) {
+  .about-marina .about-header {
+    font-size: 28px;
+    line-height: 32px;
+    padding-bottom: 15px;
+  }
+  .about-marina .under-header {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 25px;
+  }
   .marina-w-laptop .pink-bg .pink-bg-content .quote-content {
     padding-left: 15px;
     padding-right: 15px;
