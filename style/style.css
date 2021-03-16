@@ -267,16 +267,6 @@ table {
   padding-bottom: 3px;
 }
 
-.promo .flex-row .form-wrapper .form-text p .pink-gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(#C45ED3), to(#FBA2B8));
-  background: -webkit-linear-gradient(#C45ED3, #FBA2B8);
-  background: -o-linear-gradient(#C45ED3, #FBA2B8);
-  background: linear-gradient(#C45ED3, #FBA2B8);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .promo .flex-row .form-wrapper .form-group.has-error .input-text {
   -webkit-box-shadow: 0px 3px 6px 4px #c224248a;
           box-shadow: 0px 3px 6px 4px #c224248a;
@@ -1310,6 +1300,217 @@ table {
           background-size: contain;
 }
 
+.form-block {
+  padding-bottom: 150px;
+}
+
+.form-block .form-block-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 46px;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 45px;
+}
+
+.form-block .form-block-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+}
+
+.form-block .form-block-row .book-col {
+  width: 50%;
+  position: relative;
+}
+
+.form-block .form-block-row .book-col .book-wrapper {
+  position: relative;
+}
+
+.form-block .form-block-row .book-col .book-wrapper .book-bg {
+  position: absolute;
+  top: -20px;
+  bottom: -50px;
+  left: 0px;
+  right: 0px;
+  background: url(./../img/form-block-book-bg-1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  z-index: 5;
+}
+
+.form-block .form-block-row .book-col .book-wrapper .img-wrapper {
+  position: relative;
+  z-index: 20;
+  max-width: 80%;
+  padding-top: 40px;
+  margin: auto;
+  padding-right: 100px;
+}
+
+.form-block .form-block-row .book-col .book-wrapper .img-wrapper img {
+  width: 100%;
+}
+
+.form-block .form-block-row .book-col .timer {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 15px 20px 5px rgba(41, 41, 42, 0.3);
+          box-shadow: 0px 15px 20px 5px rgba(41, 41, 42, 0.3);
+  border-radius: 10px;
+  padding: 40px 70px 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 465px;
+  max-width: 80%;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+  bottom: -120px;
+  z-index: 100;
+}
+
+.form-block .form-block-row .book-col .timer .item .value {
+  width: 70px;
+}
+
+.form-block .form-block-row .book-col .timer .item .value,
+.form-block .form-block-row .book-col .timer .item .dotted {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fba2b8), to(#c45ed3));
+  background: -webkit-linear-gradient(#fba2b8, #c45ed3);
+  background: -o-linear-gradient(#fba2b8, #c45ed3);
+  background: linear-gradient(#fba2b8, #c45ed3);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.form-block .form-block-row .book-col .timer .item .label {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 15px;
+  color: #000000;
+}
+
+.form-block .form-block-row .form-col {
+  width: 50%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-block .form-block-row .form-col .form-wrapper {
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 55px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 15px 20px 5px rgba(41, 41, 42, 0.25);
+          box-shadow: 0px 15px 20px 5px rgba(41, 41, 42, 0.25);
+  border-radius: 10px;
+  position: relative;
+  z-index: 50;
+  padding-bottom: 50px;
+}
+
+.form-block .form-block-row .form-col .form-wrapper .form-text {
+  padding-bottom: 20px;
+}
+
+.form-block .form-block-row .form-col .form-wrapper .form-text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.form-block .form-block-row .form-col .form-wrapper .form-group.has-error .input-text {
+  -webkit-box-shadow: 0px 3px 6px 4px #c224248a;
+          box-shadow: 0px 3px 6px 4px #c224248a;
+}
+
+.form-block .form-block-row .form-col .form-wrapper .form-group.has-error .error-text {
+  opacity: 1;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.form-block .form-block-row .form-col .form-wrapper .form-group .input-text {
+  width: 100%;
+  max-width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #CED4DA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  padding: 15px 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #495057;
+}
+
+.form-block .form-block-row .form-col .form-wrapper .form-group .error-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 14px;
+  color: #fa6161;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.form-block .form-block-row .form-col .form-wrapper .btn-submit {
+  width: 100%;
+  max-width: 100%;
+}
+
+.form-block .form-block-row .form-col .form-wrapper .btn-wrapper {
+  padding-bottom: 45px;
+  padding-top: 40px;
+}
+
 .checked-list {
   padding-left: 40px;
 }
@@ -1421,11 +1622,21 @@ table {
 
 .section-wrapper {
   padding-left: 135px;
-  padding-right: 150px;
+  padding-right: 135px;
   max-width: 1440px;
   margin: auto;
   position: relative;
   z-index: 20;
+}
+
+.pink-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C45ED3), to(#FBA2B8));
+  background: -webkit-linear-gradient(#C45ED3, #FBA2B8);
+  background: -o-linear-gradient(#C45ED3, #FBA2B8);
+  background: linear-gradient(#C45ED3, #FBA2B8);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (min-width: 1500px) {
@@ -1523,6 +1734,17 @@ table {
 }
 
 @media screen and (max-width: 992px) {
+  .form-block .form-block-header {
+    font-size: 32px;
+    line-height: 38px;
+    padding-bottom: 25px;
+  }
+  .form-block .form-block-row .book-col .timer {
+    padding: 20px 30px;
+  }
+  .form-block {
+    padding-bottom: 80px;
+  }
   .help-you-block .help-header {
     font-size: 32px;
     line-height: 38px;
@@ -1705,6 +1927,28 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .form-block .form-block-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-block .form-block-row .book-col {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+  .form-block .form-block-row .form-col {
+    width: 100%;
+    padding-top: 150px;
+  }
+  .help-you-block .bg-flower-1 {
+    left: -64px;
+  }
+  .help-you-block .bg-flower-2 {
+    left: -40px;
+  }
   .help-you-block .help-lists .help-item .item-icon {
     width: 30px;
     height: 30px;
@@ -1883,6 +2127,40 @@ table {
 }
 
 @media screen and (max-width: 500px) {
+  .form-block .form-block-row .form-col .form-wrapper {
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .form-block .form-block-header {
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 25px;
+  }
+  .form-block .form-block-row .form-col .form-wrapper .btn-submit {
+    padding: 10px;
+  }
+  .form-block .form-block-row .book-col .book-wrapper .img-wrapper {
+    padding-right: 20px;
+  }
+  .form-block .form-block-row .book-col .timer {
+    bottom: -60px;
+  }
+  .form-block .form-block-row .form-col {
+    padding-top: 100px;
+  }
+  .form-block .form-block-row .book-col .timer .item .value,
+  .form-block .form-block-row .book-col .timer .item .dotted {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .form-block .form-block-row .book-col .timer .item .label {
+    padding-top: 5px;
+  }
+  .form-block .form-block-row .form-col .form-wrapper .form-text p {
+    font-size: 14px;
+    line-height: 16px;
+  }
   .about-marina .about-purple-oval {
     display: none;
   }
@@ -2032,6 +2310,10 @@ table {
 }
 
 @media screen and (max-width: 400px) {
+  .form-block .form-block-header {
+    font-size: 18px;
+    line-height: 24px;
+  }
   .author .author-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
