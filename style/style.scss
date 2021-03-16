@@ -4,6 +4,13 @@ $pink: rgba(251, 162, 184, 1);
 
 @import url("./../font/Montserrat/stylesheet.css");
 
+@mixin addIcon($url) {
+    background: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -756,11 +763,10 @@ table {
 }
 .about-marina {
     padding-top: 100px;
-    padding-bottom: 70px;
     background: url(./../img/about-marina-bg.png);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     position: relative;
     max-width: 100%;
     overflow: hidden;
@@ -864,6 +870,123 @@ table {
         height: 520px;
         left: 0px;
         top: 305px;
+    }
+}
+.help-you-block {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    .help-header {
+        font-family: $fontpage;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 60px;
+    }
+    .help-lists {
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .help-item {
+            width: 50%;
+            max-width: 460px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-bottom: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            .item-icon {
+                width: 36px;
+                height: 36px;
+                min-width: 36px;
+                &.icon-hands {
+                    @include addIcon("./../img/help-icon-hands.svg");
+                }
+                &.icon-lotus-position {
+                    @include addIcon("./../img/help-icon-lotus-position.svg");
+                }
+                &.icon-karma {
+                    @include addIcon("./../img/help-icon-karma.svg");
+                }
+                &.icon-calendar {
+                    @include addIcon("./../img/help-icon-calendar.svg");
+                }
+                &.icon-heart {
+                    @include addIcon("./../img/help-icon-heart.svg");
+                }
+                &.icon-creativity {
+                    @include addIcon("./../img/help-icon-creativity.svg");
+                }
+                &.icon-road {
+                    @include addIcon("./../img/help-icon-road.svg");
+                }
+                &.icon-arrows {
+                    @include addIcon("./../img/help-icon-arrows.svg");
+                }
+            }
+            .item-text {
+                font-family: $fontpage;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000000;
+                padding-left: 30px;
+            }
+        }
+    }
+    .bg-flower-1 {
+        position: absolute;
+        left: 0px;
+        top: -14px;
+        width: 260px;
+        height: 310px;
+        background: url(./../img/help-flower-1.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .bg-flower-2 {
+        position: absolute;
+        left: 0px;
+        top: 170px;
+        width: 105px;
+        height: 163px;
+        background: url(./../img/help-flower-2.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .bg-flower-3 {
+        position: absolute;
+        right: 0px;
+        top: 120px;
+        width: 260px;
+        height: 500px;
+        background: url(./../img/help-flower-3.svg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .bg-flower-4 {
+        position: absolute;
+        right: 0px;
+        top: 400px;
+        width: 115px;
+        height: 110px;
+        background: url(./../img/help-flower-4.svg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 }
 .checked-list {
@@ -983,6 +1106,30 @@ table {
     }
 }
 @media screen and (max-width: 1200px) {
+    .help-you-block .bg-flower-1 {
+        top: -14px;
+        width: 200px;
+        height: 250px;
+    }
+    .help-you-block .bg-flower-2 {
+        top: 120px;
+        width: 80px;
+        height: 163px;
+    }
+    .help-you-block .bg-flower-3 {
+        top: 120px;
+        width: 200px;
+        height: 450px;
+    }
+    .help-you-block .bg-flower-4 {
+        top: 390px;
+        width: 90px;
+        height: 90px;
+    }
+    .help-you-block .help-lists {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .flowers-list {
         padding-bottom: 15px;
     }
@@ -1016,6 +1163,26 @@ table {
     }
 }
 @media screen and (max-width: 992px) {
+    .help-you-block .help-header {
+        font-size: 32px;
+        line-height: 38px;
+        padding-bottom: 45px;
+    }
+    .help-you-block .bg-flower-1 {
+        top: -24px;
+        width: 180px;
+        height: 220px;
+    }
+    .help-you-block .bg-flower-2 {
+        top: 100px;
+        width: 70px;
+        height: 123px;
+    }
+    .help-you-block .help-lists .help-item .item-text {
+        font-size: 16px;
+        line-height: 18px;
+        padding-left: 15px;
+    }
     .about-marina .about-header {
         font-size: 32px;
         line-height: 38px;
@@ -1178,9 +1345,44 @@ table {
     }
 }
 @media screen and (max-width: 768px) {
+    .help-you-block .help-lists .help-item .item-icon {
+        width: 30px;
+        height: 30px;
+        min-height: 30px;
+    }
+    .help-you-block .help-lists .help-item .item-text {
+        font-size: 12px;
+        line-height: 16px;
+        padding-left: 8px;
+    }
+    .help-you-block .help-lists .help-item {
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: calc(50% - 5px);
+    }
+    .help-you-block .help-lists .help-item .item-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .help-you-block .help-lists .help-item {
+        padding-bottom: 20px;
+    }
+    .help-you-block {
+        padding-bottom: 50px;
+        padding-top: 40px;
+    }
+    .help-you-block .bg-flower-3 {
+        top: 80px;
+        width: 150px;
+        height: 300px;
+    }
+    .help-you-block .bg-flower-4 {
+        top: 240px;
+        width: 50px;
+        height: 50px;
+    }
     .about-marina {
         padding-top: 80px;
-        padding-bottom: 50px;
     }
     .about-marina .about-row {
         flex-direction: column-reverse;
@@ -1196,8 +1398,7 @@ table {
         }
     }
     .about-marina .about-purple-oval {
-        top: auto;
-        bottom: 300px;
+        top: 850px;
     }
     .marina-w-laptop .pink-bg .pink-bg-content .marina-author {
         font-size: 14px;
@@ -1313,6 +1514,27 @@ table {
     }
 }
 @media screen and (max-width: 500px) {
+    .about-marina .about-purple-oval {
+        display: none;
+    }
+    .help-you-block .help-lists .help-item .item-text { 
+        padding-left: 10px;
+    }
+    .help-you-block .help-lists .help-item {
+        width: 100%;
+        max-width: 100%;
+    }
+    .help-you-block .help-header {
+        font-size: 28px;
+        line-height: 32px;
+        padding-bottom: 25px;
+    }
+    .help-you-block .bg-flower-2 {
+        display: none;
+    }
+    .help-you-block .bg-flower-1 {
+        left: -55px;
+    }
     .about-marina .about-header {
         font-size: 28px;
         line-height: 32px;
