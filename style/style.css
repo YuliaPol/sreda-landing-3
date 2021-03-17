@@ -1511,6 +1511,153 @@ table {
   padding-top: 40px;
 }
 
+.content-course {
+  position: relative;
+  padding-bottom: 150px;
+}
+
+.content-course::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  bottom: -150px;
+  left: 0px;
+  right: 0px;
+  background: url(./../img/content-course-bg.jpg);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content-course .section-wrapper {
+  position: relative;
+  z-index: 20;
+}
+
+.content-course .content-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 43px;
+  line-height: 45px;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 25px;
+}
+
+.content-course .under-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 80px;
+}
+
+.content-course .row-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 65px;
+}
+
+.content-course .row-content .text-col {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.content-course .row-content .text-col:first-child {
+  width: 60%;
+  padding-right: 65px;
+}
+
+.content-course .row-content .text-col:last-child {
+  width: 55%;
+  padding-left: 80px;
+  padding-top: 20px;
+}
+
+.content-course .row-content .text-col .col-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.content-course .row-content .picture-col:first-child {
+  width: 40%;
+}
+
+.content-course .row-content .picture-col:last-child {
+  width: 40%;
+}
+
+.content-course .row-content .picture-col img {
+  max-width: 100%;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.small-check {
+  padding-bottom: 20px;
+}
+
+.small-check li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 12px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.small-check li::before {
+  content: " ";
+  width: 12px;
+  min-width: 12px;
+  height: 10px;
+  background: url(./../img/list-small-check.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center;
+  margin-right: 15px;
+}
+
+.small-check li span {
+  display: contents;
+}
+
 .checked-list {
   padding-left: 40px;
 }
@@ -1676,6 +1823,11 @@ table {
 }
 
 @media screen and (max-width: 1200px) {
+  .content-course .row-content .text-col:last-child {
+    padding-left: 40px;
+    font-size: 16px;
+    line-height: 28px;
+  }
   .help-you-block .bg-flower-1 {
     top: -14px;
     width: 200px;
@@ -1734,9 +1886,40 @@ table {
 }
 
 @media screen and (max-width: 992px) {
+  .content-course {
+    padding-bottom: 100px;
+  }
+  .content-course .content-header {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .content-course .under-header {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 35px;
+  }
+  .content-course .row-content .text-col .col-header {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 15px;
+  }
+  .small-check li {
+    font-size: 14px;
+    line-height: 18px;
+  }
   .form-block .form-block-header {
     font-size: 32px;
     line-height: 38px;
+    padding-bottom: 25px;
+  }
+  .content-course .row-content .text-col:first-child {
+    padding-right: 20px;
+  }
+  .content-course .row-content .text-col:last-child {
+    padding-left: 20px;
+    padding-top: 0px;
+  }
+  .content-course .row-content {
     padding-bottom: 25px;
   }
   .form-block .form-block-row .book-col .timer {
@@ -1927,6 +2110,53 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .content-course {
+    padding-bottom: 60px;
+  }
+  .content-course .row-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content-course .row-content:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .content-course .row-content .text-col {
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .content-course .row-content .text-col p {
+    padding-bottom: 10px;
+  }
+  .content-course .row-content .text-col:last-child, .content-course .row-content .text-col:first-child {
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .content-course .row-content .picture-col {
+    width: 100% !important;
+    text-align: center;
+  }
+  .content-course .row-content .picture-col:first-child {
+    padding-top: 20px;
+  }
+  .content-course .content-header {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .content-course .under-header {
+    font-size: 14px;
+    line-height: 16px;
+  }
   .form-block .form-block-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2127,6 +2357,17 @@ table {
 }
 
 @media screen and (max-width: 500px) {
+  .small-check li::before {
+    margin-right: 10px;
+  }
+  .content-course .content-header {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 15px;
+  }
+  .content-course .under-header {
+    padding-bottom: 25px;
+  }
   .form-block .form-block-row .form-col .form-wrapper {
     padding-top: 35px;
     padding-left: 20px;
