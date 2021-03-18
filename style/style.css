@@ -2991,7 +2991,8 @@ table {
   .about-marina {
     background: none;
   }
-  .content-course::before {
+  .content-course::before,
+  .life .life-bg-1 {
     display: none;
   }
 }
