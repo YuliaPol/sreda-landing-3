@@ -1513,7 +1513,7 @@ table {
 
 .content-course {
   position: relative;
-  padding-bottom: 150px;
+  padding-bottom: 120px;
 }
 
 .content-course::before {
@@ -1613,6 +1613,149 @@ table {
 
 .content-course .row-content .picture-col img {
   max-width: 100%;
+}
+
+.four-steps {
+  padding-bottom: 150px;
+}
+
+.four-steps .steps-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 54px;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 80px;
+}
+
+.four-steps .steps-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.four-steps .steps-list::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 50px;
+  height: 2px;
+  background: url(./../img/dashed-line.svg);
+  background-position: left center;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+  background-repeat: repeat-x;
+  z-index: 10;
+}
+
+.four-steps .steps-list .step-item {
+  width: 25%;
+  position: relative;
+  z-index: 50;
+}
+
+.four-steps .steps-list .step-item:nth-child(1) .icon {
+  background: -webkit-linear-gradient(339.99deg, #C45ED3 8.46%, #FBA2B8 89.43%);
+  background: -o-linear-gradient(339.99deg, #C45ED3 8.46%, #FBA2B8 89.43%);
+  background: linear-gradient(110.01deg, #C45ED3 8.46%, #FBA2B8 89.43%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.four-steps .steps-list .step-item:nth-child(2) .icon {
+  background: -webkit-linear-gradient(345.15deg, #FBA2B8 9.96%, #C45ED3 98.54%);
+  background: -o-linear-gradient(345.15deg, #FBA2B8 9.96%, #C45ED3 98.54%);
+  background: linear-gradient(104.85deg, #FBA2B8 9.96%, #C45ED3 98.54%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.four-steps .steps-list .step-item:nth-child(3) .icon {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C45ED3), to(#FBA2B8));
+  background: -webkit-linear-gradient(top, #C45ED3 0%, #FBA2B8 100%);
+  background: -o-linear-gradient(top, #C45ED3 0%, #FBA2B8 100%);
+  background: linear-gradient(180deg, #C45ED3 0%, #FBA2B8 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.four-steps .steps-list .step-item:nth-child(4) {
+  padding-left: 20px;
+  width: auto;
+}
+
+.four-steps .steps-list .step-item:nth-child(4) .icon-wrapper {
+  min-width: 170px;
+}
+
+.four-steps .steps-list .step-item:nth-child(4) .text {
+  padding-right: 0px;
+  max-width: 170px;
+}
+
+.four-steps .steps-list .step-item:nth-child(4) .icon {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FBA2B8), to(#C45ED3));
+  background: -webkit-linear-gradient(top, #FBA2B8 0%, #C45ED3 100%);
+  background: -o-linear-gradient(top, #FBA2B8 0%, #C45ED3 100%);
+  background: linear-gradient(180deg, #FBA2B8 0%, #C45ED3 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.four-steps .steps-list .step-item .icon-wrapper {
+  display: inline-block;
+  background: #fff;
+}
+
+.four-steps .steps-list .step-item .icon {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 96px;
+  text-align: left;
+  background: -webkit-gradient(linear, left top, left bottom, from(#C45ED3), to(#FBA2B8));
+  background: -webkit-linear-gradient(#C45ED3, #FBA2B8);
+  background: -o-linear-gradient(#C45ED3, #FBA2B8);
+  background: linear-gradient(#C45ED3, #FBA2B8);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.four-steps .steps-list .step-item .text {
+  padding-top: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  padding-right: 20px;
+  max-width: 290px;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .underline-text {
@@ -1828,6 +1971,9 @@ table {
     font-size: 16px;
     line-height: 28px;
   }
+  .content-course {
+    padding-bottom: 80px;
+  }
   .help-you-block .bg-flower-1 {
     top: -14px;
     width: 200px;
@@ -1886,6 +2032,15 @@ table {
 }
 
 @media screen and (max-width: 992px) {
+  .four-steps .steps-list .step-item .text {
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 5px;
+  }
+  .four-steps .steps-list .step-item .icon {
+    font-size: 76px;
+    line-height: 76px;
+  }
   .content-course {
     padding-bottom: 100px;
   }
@@ -2110,6 +2265,75 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .four-steps .steps-header {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .four-steps .steps-list::before {
+    top: 30px;
+  }
+  .four-steps .steps-list::before {
+    display: none;
+  }
+  .four-steps .steps-list .step-item:nth-child(4) {
+    width: 50%;
+    max-width: 250px;
+    padding-left: 0px;
+  }
+  .four-steps .steps-list .step-item:nth-child(4) .icon-wrapper {
+    min-width: auto;
+  }
+  .four-steps .steps-list {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .four-steps .steps-list .step-item {
+    width: 50%;
+    max-width: 250px;
+    padding-bottom: 25px;
+  }
+  .four-steps .steps-list .step-item .text {
+    max-width: none;
+  }
+  .four-steps .steps-list .step-item::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 25px;
+    height: 2px;
+    background: url(./../img/dashed-line.svg);
+    background-position: left center;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    z-index: 10;
+  }
+  .four-steps .steps-list .step-item:nth-child(2), .four-steps .steps-list .step-item:nth-child(4) {
+    text-align: right;
+  }
+  .four-steps .steps-list .step-item:nth-child(2) .text, .four-steps .steps-list .step-item:nth-child(4) .text {
+    text-align: right;
+    max-width: none;
+    padding-right: 0px;
+  }
+  .four-steps .steps-list .step-item .icon-wrapper {
+    position: relative;
+    z-index: 50;
+  }
+  .four-steps .steps-list .step-item .icon {
+    font-size: 54px;
+    line-height: 54px;
+  }
+  .four-steps .steps-list .step-item .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
   .content-course {
     padding-bottom: 60px;
   }
@@ -2357,6 +2581,15 @@ table {
 }
 
 @media screen and (max-width: 500px) {
+  .four-steps .steps-header {
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 35px;
+  }
+  .four-steps .steps-list {
+    max-width: 90%;
+    margin: auto;
+  }
   .small-check li::before {
     margin-right: 10px;
   }
@@ -2551,6 +2784,9 @@ table {
 }
 
 @media screen and (max-width: 400px) {
+  .four-steps .steps-list {
+    padding-left: 0px;
+  }
   .form-block .form-block-header {
     font-size: 18px;
     line-height: 24px;
@@ -2591,6 +2827,10 @@ table {
 }
 
 @media screen and (max-width: 350px) {
+  .four-steps .steps-list .step-item .text {
+    font-size: 10px;
+    line-height: 12px;
+  }
   .marina-w-laptop .pink-bg {
     padding-bottom: 300px;
   }
