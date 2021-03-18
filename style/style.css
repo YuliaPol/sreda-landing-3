@@ -1511,6 +1511,29 @@ table {
   padding-top: 40px;
 }
 
+.form-block .form-block-row .form-col .form-wrapper .btn-wrapper.pd-20 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.form-block-2 .form-block-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 54px;
+  text-align: center;
+  color: #000000;
+}
+
+.form-block-2 .form-block-row .form-col .form-wrapper .form-text {
+  padding-bottom: 0px;
+}
+
+.form-block-2 .form-block-row .form-col .form-wrapper .form-text p {
+  padding-bottom: 5px;
+}
+
 .content-course {
   position: relative;
   padding-bottom: 120px;
@@ -2032,6 +2055,9 @@ table {
 }
 
 @media screen and (max-width: 992px) {
+  .four-steps {
+    padding-bottom: 100px;
+  }
   .four-steps .steps-list .step-item .text {
     font-size: 16px;
     line-height: 22px;
@@ -2265,6 +2291,9 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .four-steps {
+    padding-bottom: 80px;
+  }
   .four-steps .steps-header {
     font-size: 32px;
     line-height: 38px;
@@ -2581,6 +2610,12 @@ table {
 }
 
 @media screen and (max-width: 500px) {
+  .form-block-2 .form-block-row .form-col .form-wrapper .form-text p {
+    padding-bottom: 15px;
+  }
+  .four-steps {
+    padding-bottom: 50px;
+  }
   .four-steps .steps-header {
     font-size: 24px;
     line-height: 28px;
