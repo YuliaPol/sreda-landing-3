@@ -211,6 +211,8 @@ table {
   min-width: 500px;
   max-width: 100%;
   position: relative;
+  max-height: 675px;
+  overflow: visible;
 }
 
 .promo .flex-row .form-col .mandala-form-1 {
