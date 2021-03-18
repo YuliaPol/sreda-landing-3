@@ -1779,6 +1779,78 @@ table {
   max-width: 290px;
 }
 
+.footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#D294E1), to(#FBA2B8));
+  background: -webkit-linear-gradient(top, #D294E1 0%, #FBA2B8 100%);
+  background: -o-linear-gradient(top, #D294E1 0%, #FBA2B8 100%);
+  background: linear-gradient(180deg, #D294E1 0%, #FBA2B8 100%);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer .docs-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.footer .docs-list li {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.footer .docs-list li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.footer .footer-text {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+
+.footer .footer-text a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer .footer-logo {
+  padding-top: 20px;
+  width: 122px;
+  margin: auto;
+}
+
+.footer .footer-logo img {
+  max-width: 100%;
+}
+
 .nowrap {
   white-space: nowrap;
 }
@@ -2293,6 +2365,11 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .footer .docs-list li,
+  .footer .footer-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
   .four-steps {
     padding-bottom: 80px;
   }
@@ -2472,6 +2549,8 @@ table {
   }
   .about-marina {
     padding-top: 80px;
+    -webkit-background-size: cover;
+            background-size: cover;
   }
   .about-marina .about-row {
     -webkit-box-orient: vertical;
@@ -2612,6 +2691,26 @@ table {
 }
 
 @media screen and (max-width: 500px) {
+  .footer .docs-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .docs-list li {
+    padding-bottom: 5px;
+  }
+  .footer .docs-list .docs-line {
+    display: none;
+  }
+  .footer .footer-logo {
+    padding-top: 10px;
+  }
+  .footer {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
   .form-block-2 .form-block-row .form-col .form-wrapper .form-text p {
     padding-bottom: 15px;
   }
@@ -2883,5 +2982,16 @@ table {
   }
   .promo .flex-row .form-wrapper .timer .item .value {
     width: 40px;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
+  .promo,
+  .what-separated,
+  .about-marina {
+    background: none;
+  }
+  .content-course::before {
+    display: none;
   }
 }

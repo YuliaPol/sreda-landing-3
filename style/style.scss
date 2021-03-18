@@ -1361,6 +1361,56 @@ table {
         }
     }
 }
+.footer {
+    background: linear-gradient(180deg, #D294E1 0%, #FBA2B8 100%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .docs-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+        flex-wrap: wrap;
+        li {
+            display: block;
+            font-family: $fontpage;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            color: #FFFFFF;
+            a {
+                color: #FFFFFF;
+                text-decoration: none;
+                padding-left: 5px;
+            }
+        }
+    }
+    .footer-text {
+        display: block;
+        font-family: $fontpage;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    .footer-logo {
+        padding-top: 20px;
+        width: 122px;
+        margin: auto;
+        img {
+            max-width: 100%;
+        }
+    }
+}
 .nowrap {
     white-space: nowrap;
 }
@@ -1815,10 +1865,13 @@ table {
     }
 }
 @media screen and (max-width: 768px) {
+    .footer .docs-list li,
+    .footer .footer-text {
+        font-size: 12px;
+        line-height: 14px;
+    }
     .four-steps {
         padding-bottom: 80px;
-    }
-    .four-steps .steps-list {
     }
     .four-steps .steps-header {
         font-size: 32px;
@@ -1981,6 +2034,7 @@ table {
     }
     .about-marina {
         padding-top: 80px;
+        background-size: cover;
     }
     .about-marina .about-row {
         flex-direction: column-reverse;
@@ -2112,6 +2166,22 @@ table {
     }
 }
 @media screen and (max-width: 500px) {
+    .footer .docs-list {
+        flex-direction: column;
+        li {
+            padding-bottom: 5px;
+        }
+        .docs-line {
+            display: none;
+        }
+    }
+    .footer .footer-logo {
+        padding-top: 10px;
+    }
+    .footer {
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }
     .form-block-2 .form-block-row .form-col .form-wrapper .form-text p {
         padding-bottom: 15px;
     }
@@ -2377,5 +2447,15 @@ table {
     }
     .promo .flex-row .form-wrapper .timer .item .value {
         width: 40px;
+    }
+}
+@media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
+    .promo,
+    .what-separated,
+    .about-marina {
+        background: none;
+    }
+    .content-course::before {
+        display: none;
     }
 }
