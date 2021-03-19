@@ -2026,6 +2026,264 @@ table {
   -webkit-text-fill-color: transparent;
 }
 
+.thanks-container {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.thanks-container .ready-wrapper {
+  width: 650px;
+  margin: auto;
+  max-width: 90%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 15px 20px 5px rgba(41, 41, 42, 0.3);
+          box-shadow: 0px 15px 20px 5px rgba(41, 41, 42, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  height: 95px;
+}
+
+.thanks-container .ready-wrapper .ready-label {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.thanks-container .ready-wrapper .ready-label .ready-text {
+  position: relative;
+  z-index: 20;
+  height: 100%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+  width: 60%;
+}
+
+.thanks-container .ready-wrapper .ready-label .ready-active {
+  position: absolute;
+  z-index: 5;
+  bottom: 0px;
+  left: 0px;
+  top: 0px;
+  width: 0%;
+  background: -webkit-linear-gradient(359.88deg, #FBA2B8 3.06%, #CB72D9 80.45%);
+  background: -o-linear-gradient(359.88deg, #FBA2B8 3.06%, #CB72D9 80.45%);
+  background: linear-gradient(90.12deg, #FBA2B8 3.06%, #CB72D9 80.45%);
+  border-radius: 5px;
+  -webkit-transition: width 0.5s ease-in;
+  -o-transition: width 0.5s ease-in;
+  transition: width 0.5s ease-in;
+}
+
+.thanks-container .ready-wrapper .ready-label .ready-active.active {
+  width: 60%;
+}
+
+.thanks-container .thanks-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 54px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#C45ED3), color-stop(200%, #FBA2B8));
+  background: -webkit-linear-gradient(top, #C45ED3 0%, #FBA2B8 200%);
+  background: -o-linear-gradient(top, #C45ED3 0%, #FBA2B8 200%);
+  background: linear-gradient(180deg, #C45ED3 0%, #FBA2B8 200%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.thanks-container .thanks-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+  max-width: 805px;
+  margin: auto;
+  padding-bottom: 35px;
+}
+
+.thanks-container .step-label {
+  background: #DCDCDC;
+  margin: auto;
+  width: 815px;
+  max-width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+}
+
+.thanks-container .thanks-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 45px;
+}
+
+.thanks-container .thanks-row .book-col {
+  width: 40%;
+}
+
+.thanks-container .thanks-row .book-col img {
+  width: 100%;
+}
+
+.thanks-container .thanks-row .info-col {
+  width: 60%;
+  padding-left: 20px;
+}
+
+.thanks-container .thanks-row .info-col p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 28px;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.thanks-container .thanks-row .info-col .text-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C45ED3), to(#FBA2B8));
+  background: -webkit-linear-gradient(top, #C45ED3 0%, #FBA2B8 100%);
+  background: -o-linear-gradient(top, #C45ED3 0%, #FBA2B8 100%);
+  background: linear-gradient(180deg, #C45ED3 0%, #FBA2B8 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.thanks-container .thanks-row .social-btns {
+  padding-top: 25px;
+}
+
+.thanks-container .thanks-row .social-btns .social-btn-wrapper {
+  padding-bottom: 20px;
+}
+
+.thanks-container .thanks-row .social-btns .social-btn-wrapper .social-btn {
+  padding: 11px 25px;
+  padding-left: 11px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  height: 60px;
+}
+
+.thanks-container .thanks-row .social-btns .social-btn-wrapper .social-btn::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin-right: 12px;
+}
+
+.thanks-container .thanks-row .social-btns .social-btn-wrapper .social-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.thanks-container .thanks-row .social-btns .social-btn-wrapper .social-btn:hover::after {
+  width: 120%;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.thanks-container .thanks-row .social-btns .social-btn-wrapper .social-btn.btn-viber {
+  background: #7F72D9;
+}
+
+.thanks-container .thanks-row .social-btns .social-btn-wrapper .social-btn.btn-viber::before {
+  background: url(./../img/icon-viber.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.thanks-container .thanks-row .social-btns .social-btn-wrapper .social-btn.btn-telegram {
+  background: #55A8EC;
+}
+
+.thanks-container .thanks-row .social-btns .social-btn-wrapper .social-btn.btn-telegram::before {
+  background: url(./../img/icon-telegram.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
 @media screen and (min-width: 1500px) {
   .promo .mandala {
     width: 280px;
@@ -2069,7 +2327,7 @@ table {
     line-height: 28px;
   }
   .content-course {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
   .help-you-block .bg-flower-1 {
     top: -14px;
@@ -2129,6 +2387,18 @@ table {
 }
 
 @media screen and (max-width: 992px) {
+  .thanks-container .ready-wrapper {
+    width: 500px;
+    height: 80px;
+  }
+  .thanks-container .ready-wrapper .ready-label .ready-text {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .thanks-container .thanks-header {
+    font-size: 48px;
+    line-height: 52px;
+  }
   .four-steps {
     padding-bottom: 100px;
   }
@@ -2365,6 +2635,50 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .promo .section-wrapper {
+    padding-bottom: 40px;
+  }
+  .what-separated {
+    padding-top: 80px;
+  }
+  .marina-w-laptop {
+    padding-top: 0px;
+  }
+  .thanks-container .thanks-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .thanks-container .thanks-header {
+    font-size: 32px;
+    line-height: 38px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+  }
+  .thanks-container .ready-wrapper {
+    width: 400px;
+    height: 60px;
+  }
+  .thanks-container .ready-wrapper .ready-label .ready-text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .thanks-container .thanks-row .info-col p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .thanks-container .thanks-row .social-btns .social-btn-wrapper .social-btn {
+    padding: 10px 15px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .thanks-container .thanks-row .social-btns .social-btn-wrapper .social-btn::before {
+    width: 20px;
+    height: 20px;
+  }
+  .thanks-container .thanks-row .social-btns {
+    padding-top: 10px;
+  }
   .footer .docs-list li,
   .footer .footer-text {
     font-size: 12px;
@@ -2548,7 +2862,7 @@ table {
     height: 50px;
   }
   .about-marina {
-    padding-top: 80px;
+    padding-top: 30px;
     -webkit-background-size: cover;
             background-size: cover;
   }
@@ -2691,6 +3005,38 @@ table {
 }
 
 @media screen and (max-width: 500px) {
+  .thanks-container .thanks-row .social-btns .social-btn-wrapper .social-btn {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .thanks-container .thanks-row .social-btns .social-btn-wrapper .social-btn.btn-viber::before {
+    margin-right: 5px;
+  }
+  .thanks-container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .thanks-container .thanks-row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .thanks-container .thanks-row .book-col {
+    width: 100%;
+    padding-bottom: 20px;
+    max-width: 350px;
+    margin: auto;
+  }
+  .thanks-container .thanks-row .book-col img {
+    max-width: 90%;
+  }
+  .thanks-container .thanks-row .info-col {
+    width: 100%;
+  }
+  .thanks-container .step-label {
+    font-size: 24px;
+    line-height: 24px;
+  }
   .footer .docs-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2715,7 +3061,7 @@ table {
     padding-bottom: 15px;
   }
   .four-steps {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   .four-steps .steps-header {
     font-size: 24px;
@@ -2916,6 +3262,9 @@ table {
   }
   .promo .flex-row .form-wrapper .thank-you-text {
     padding-bottom: 0px;
+  }
+  .promo .flex-row .info-col .event-info {
+    padding-bottom: 25px;
   }
 }
 
