@@ -41,28 +41,67 @@ jQuery(function ($) {
             }
         }, 1000);
 
-        $('.form-valid').submit(function(e){
-            e.preventDefault();
-            let values = $(this).find('input[data-reqired]');
-            let errorArray = new Array();
-            for (let index = 0; index < values.length; index++) {
-                if(!$(values[index]).val()){
+        function validateEmail($email) {
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            return emailReg.test( $email );
+        }
+        $.fn.inputFilter = function(inputFilter) {
+          return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function() {
+              if (inputFilter(this.value)) {
+                this.oldValue = this.value;
+                this.oldSelectionStart = this.selectionStart;
+                this.oldSelectionEnd = this.selectionEnd;
+                } else if (this.hasOwnProperty("oldValue")) {
+                this.value = this.oldValue;
+                this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+                } else {
+                this.value = "";
+              }
+          });
+        };
+        $(".input-phone").inputFilter(function(value) {
+            return /^\d*$/.test(value) && (value === "" || parseInt(value) <= 999999999999);
+        });
+        $('input[type=email]').change(function(e){
+          let val = $(this).val();
+          if(!validateEmail(val)){
+            $(this).parents('.form-group').addClass('has-error');
+            $(this).parents('.form-group').find('.error-text').html('Неверно введен email');
+            $(this).focus(function (e) {
+                $(this).parents('.form-group').removeClass('has-error');
+            });
+          }
+        });
+        $('form .btn-submit').click(function(e){
+          e.preventDefault();
+          let values = $(this).parents('form').find('input[data-reqired]');
+          let errorArray = new Array();
+          for (let index = 0; index < values.length; index++) {
+              if( $(values[index]).attr('type')=='email' && $(values[index]).val()){
+                if(!validateEmail($(values[index]).val())){
                   errorArray.push($(values[index]));
                   $(values[index]).parents('.form-group').addClass('has-error');
+                  $(values[index]).parents('.form-group').find('.error-text').html('Неверно введен email');
                   $(values[index]).focus(function (e) {
-                      $(this).parents('.form-group').removeClass('has-error');
+                      $(values[index]).parents('.form-group').removeClass('has-error');
                   });
                 }
+              } else {
+              if(!$(values[index]).val()){
+                errorArray.push($(values[index]));
+                if($(values[index]).attr('type')=='email') {
+                  $(values[index]).parents('.form-group').find('.error-text').html('Введите Ваш email');
+                }
+                $(values[index]).parents('.form-group').addClass('has-error');
+                $(values[index]).focus(function (e) {
+                    $(this).parents('.form-group').removeClass('has-error');
+                });
+              }
             }
-            if(errorArray.length==0){
-                var parents = $(this).parents('.form-wrapper');
-                $(this).remove();
-                parents.find('.timer').remove(0);
-                parents.find('.bonus-text-wrapper .bonus-text').remove();
-                parents.find('.form-text').remove(0);
-                parents.find('.thank-you-text').fadeIn(300);
-                parents.find('.bonus-text-wrapper .thank-you-hidden-text').fadeIn(300);
-            }
+          }
+          if(errorArray.length==0){
+            $(this).parents('form').submit();
+          }
         });
     });
 });
